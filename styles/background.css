@@ -1,0 +1,214 @@
+body {
+  background: radial-gradient(#a23982,#1f1013);
+}
+
+.hor_light {
+  position: absolute;
+  height: 0px;
+  opacity: 0.75;
+  background-color: lightgray;
+  box-shadow: white 0px 0px 20px 2px;
+  opacity: 0;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 50%;
+  margin: auto;
+}
+
+.vert_light {
+  position: absolute;
+  width: 0px;
+  opacity: 0.75;
+  background-color: lightgray;
+  box-shadow: white 0px 0px 20px 2px;
+  opacity: 0;
+  top: 100%;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+}
+
+
+.x1 {
+  -webkit-animation: floatRight 2.5s infinite linear;
+  -moz-animation: floatRight 2.5s infinite linear;
+  -o-animation: floatRight 2.5s infinite linear;
+  animation: floatRight 2.5s infinite linear;
+  transform: scale(0.5);
+  top: -90%;
+}
+
+.x2 {
+  -webkit-animation: floatRight 4s infinite linear;
+  -moz-animation: floatRight 4s infinite linear;
+  -o-animation: floatRight 4s infinite linear;
+  animation: floatRight 4s infinite linear;
+  transform: scale(1.5);
+  top: -54%;
+}
+
+.x3 {
+  -webkit-animation: floatRight 5s infinite linear;
+  -moz-animation: floatRight 5s infinite linear;
+  -o-animation: floatRight 5s infinite linear;
+  animation: floatRight 5s infinite linear;
+  transform: scale(0.9);
+  top: -18%;
+}
+
+
+.x4 {
+  -webkit-animation: floatRight 5s infinite linear;
+  -moz-animation: floatRight 5s infinite linear;
+  -o-animation: floatRight 5s infinite linear;
+  animation: floatRight 5s infinite linear;
+  transform: scale(1.7);
+  top: 18%;
+}
+
+
+.x5 {
+  -webkit-animation: floatRight 2s infinite linear;
+  -moz-animation: floatRight 2s infinite linear;
+  -o-animation: floatRight 2s infinite linear;
+  animation: floatRight 2s infinite linear;
+  transform: scale(0.7);
+  top: 54%;
+}
+
+
+.x6 {
+  -webkit-animation: floatRight 5s infinite linear;
+  -moz-animation: floatRight 5s infinite linear;
+  -o-animation: floatRight 5s infinite linear;
+  animation: floatRight 5s infinite linear;
+  transform: scale(1.0);
+  top: 90%;
+}
+
+
+.x7 {
+  -webkit-animation: floatUp 5s infinite linear;
+  -moz-animation: floatUp 5s infinite linear;
+  -o-animation: floatUp 5s infinite linear;
+  animation: floatUp 5s infinite linear;
+  transform: scale(1.0);
+  left: 90%;
+}
+
+
+.x8 {
+  -webkit-animation: floatUp 2s infinite linear;
+  -moz-animation: floatUp 2s infinite linear;
+  -o-animation: floatUp 2s infinite linear;
+  animation: floatUp 2s infinite linear;
+  transform: scale(0.7);
+  left: 54%;
+}
+
+
+.x9 {
+  -webkit-animation: floatUp 5s infinite linear;
+  -moz-animation: floatUp 5s infinite linear;
+  -o-animation: floatUp 5s infinite linear;
+  animation: floatUp 5s infinite linear;
+  transform: scale(1.7);
+  left: 18%;
+}
+
+
+.x10 {
+  -webkit-animation: floatUp 5s infinite linear;
+  -moz-animation: floatUp 5s infinite linear;
+  -o-animation: floatUp 5s infinite linear;
+  animation: floatUp 5s infinite linear;
+  transform: scale(0.9);
+  left: -18%;
+}
+
+
+.x11 {
+  -webkit-animation: floatUp 4s infinite linear;
+  -moz-animation: floatUp 4s infinite linear;
+  -o-animation: floatUp 4s infinite linear;
+  animation: floatUp 4s infinite linear;
+  transform: scale(1.5);
+  left: -54%;
+}
+
+
+.x12 {
+  -webkit-animation: floatUp 2.5s infinite linear;
+  -moz-animation: floatUp 2.5s infinite linear;
+  -o-animation: floatUp 2.5s infinite linear;
+  animation: floatUp 2.5s infinite linear;
+  transform: scale(0.5);
+  left: -90%;
+}
+
+
+@-webkit-keyframes floatRight {
+  0%{right: 100%; opacity: 0;}
+  25%{opacity: 1;}
+  50%{right: 0%; opacity: 0.8;}
+  75%{opacity: 1;}
+  100%{right: -100%; opacity: 0;}
+}
+
+@-moz-keyframes floatRight {
+  0%{right: 100%; opacity: 0;}
+  25%{opacity: 1;}
+  50%{right: 0%; opacity: 0.8;}
+  75%{opacity: 1;}
+  100%{right: -100%; opacity: 0;}
+}
+
+@-o-keyframes floatRight {
+  0%{right: 100%; opacity: 0;}
+  25%{opacity: 1;}
+  50%{right: 0%; opacity: 0.8;}
+  75%{opacity: 1;}
+  100%{right: -100%; opacity: 0;}
+}
+
+@-keyframes floatRight {
+  0%{right: 100%; opacity: 0;}
+  25%{opacity: 1;}
+  50%{right: 0%; opacity: 0.8;}
+  75%{opacity: 1;}
+  100%{right: -100%; opacity: 0;}
+}
+
+@-webkit-keyframes floatUp {
+  0%{top: 100%; opacity: 0;}
+  25%{opacity: 1;}
+  50%{top: 0%; opacity: 0.8;}
+  75%{opacity: 1;}
+  100%{top: -100%; opacity: 0;}
+}
+
+@-moz-keyframes floatUp {
+  0%{top: 100%; opacity: 0;}
+  25%{opacity: 1;}
+  50%{top: 0%; opacity: 0.8;}
+  75%{opacity: 1;}
+  100%{top: -100%; opacity: 0;}
+}
+
+@-o-keyframes floatUp {
+  0%{top: 100%; opacity: 0;}
+  25%{opacity: 1;}
+  50%{top: 0%; opacity: 0.8;}
+  75%{opacity: 1;}
+  100%{top: -100%; opacity: 0;}
+}
+
+@-keyframes floatUp {
+  0%{top: 100%; opacity: 0;}
+  25%{opacity: 1;}
+  50%{top: 0%; opacity: 0.8;}
+  75%{opacity: 1;}
+  100%{top: -100%; opacity: 0;}
+}

@@ -1,0 +1,12 @@
+<div class='hor_light x1'></div>
+  <div class='hor_light x2'></div>
+  <div class='hor_light x3'></div>
+  <div class='hor_light x4'></div>
+  <div class='hor_light x5'></div>
+  <div class='hor_light x6'></div>
+  <div class='vert_light x7'></div>
+  <div class='vert_light x8'></div>
+  <div class='vert_light x9'></div>
+  <div class='vert_light x10'></div>
+  <div class='vert_light x11'></div>
+  <div class='vert_light x12'></div>
