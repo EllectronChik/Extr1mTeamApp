@@ -16,7 +16,7 @@
     <meta http-equiv="expires" content="0">
     <meta charset = "UTF-8">
         <title> <?= $title ?> </title>
-        <link href="styles/style.css?5" rel="stylesheet">
+        <link href="styles/style.css?6" rel="stylesheet">
         <link href="styles/background.css" rel="stylesheet"> 
         <link rel="icon" href="logo.ico" type="image/x-icon">
         <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
@@ -49,7 +49,7 @@
                 <?php } ?>
             </div>
         </header>
-        <nav class = "site_navigation <?=$page?>">
+        <nav class = "site_navigation <?=$title?>">
                 <ul>
                     <li><form action = "/news"><button  class = "news_page">News</button></form></li>
                 </ul>

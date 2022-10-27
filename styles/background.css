@@ -3,7 +3,7 @@ body {
 }
 
 .hor_light {
-  position: absolute;
+  position: fixed;
   height: 0px;
   opacity: 0.75;
   background-color: lightgray;
@@ -17,7 +17,7 @@ body {
 }
 
 .vert_light {
-  position: absolute;
+  position: fixed;
   width: 0px;
   opacity: 0.75;
   background-color: lightgray;

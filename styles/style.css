@@ -13,6 +13,7 @@
 
 
 header {
+    z-index: 10;
     max-width: 71vmax;
     min-width: 1190px;
     display: flex;
@@ -208,6 +209,9 @@ button:hover {
  }
 
  .site_navigation {
+    position: sticky;
+    top: 0;
+    min-height: 2em;
     display: flex;
  }
 
@@ -271,4 +275,14 @@ button:hover {
 
 .reg_button {
     transform: translate(-25vw, 30vh);
+}
+
+.add_player {
+    z-index: 10;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 10%;
+    height: 10%;
+
 }
