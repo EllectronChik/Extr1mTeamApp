@@ -16,7 +16,7 @@
 
       <span class="input reg">
          <label for="email">Email</label>
-         <input type="test" name="email" id="email" required>
+         <input type="text" name="email" id="email" required>
          <span class="spin"></span>
       </span>
       <span class="input reg">

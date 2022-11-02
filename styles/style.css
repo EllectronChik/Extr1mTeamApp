@@ -11,21 +11,24 @@
    outline: none;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 
 header {
     z-index: 10;
     max-width: 71vmax;
-    min-width: 1190px;
     display: flex;
-    flex-wrap: wrap;
+    margin: auto;
     margin-top: 0.5%;
-    margin-left: 14.5vmax;
     height: 15vmin;
 
 }
 
 
 .h_block_1 {
+    height: 15.5vmin;
     width: 53.25vmax;
     border-style: ridge;
     border-top-left-radius: 4vmin;
@@ -34,28 +37,26 @@ header {
 
 
 .h_logo {
-    height: 15vmin;
+    max-height: 15vmin;
     float: left;
     margin-left: 2vmax; 
 }
 
 
 .h_name {
-    width: 35vw;
-    transform: translateY(4vmin);
+    max-width: 30vw;
+    height: auto;
+    transform: translateY(5vmin);
 }
 
 
 .h_block_2 {
-    display: flex;
-    flex-direction: column;
     margin-left: 0.5vmax;
 }
 
 
 .sign_in_button{
-    background: rgba(365,365,365,0.4);;
-    font-family: 'Roboto', sans-serif;
+    background: rgba(365,365,365,0.4);
     width: 17.25vmax;
     height: 7vmin;
     font-size: 3vmin;
@@ -68,8 +69,7 @@ header {
 
 
 .sign_up_button{
-    background: rgba(365,365,365,0.4);;
-    font-family: 'Roboto', sans-serif;
+    background: rgba(365,365,365,0.4);
     width: 17.25vmax;
     height: 7vmin;
     font-size: 3vmin;
@@ -81,28 +81,29 @@ header {
 
 }
 
+.adding_button:hover,
 button:hover {
     border-color: #ED2553;
     color: #ED2553;
     transition: 0.3s;
-    background: rgba(365,365,365,0.8);;
+    background: rgba(365,365,365,0.8);
 }
 
 .reg_form {
     max-width: 71%;
     background: rgba(365,365,365,0.4);
-    margin-top: 5vmin;
-    margin-left: 14.5vmax;
+    margin: auto;
+    margin-top: 3vmin;
     border-style: ridge;
     border-radius: 4vmin;
-    min-height: 60vmin;
+    height: 60%;
 }
 
 
 .reg_title {
     top: 2vh;
     right: -1vw;
-    width: 100%;
+    max-width: 100%;
     line-height: 100%;
     margin-top: 0.6vmin;
     font-size: 3vmax;
@@ -155,7 +156,7 @@ button:hover {
 
 .input input,
 .input label {
-    font-family: 'Roboto', sans-serif;
+
     font-size: 2.4vh;
     font-weight: 300;
     color: rgba(0, 0, 0, 0.8);
@@ -209,9 +210,9 @@ button:hover {
  }
 
  .site_navigation {
+    margin:auto;
+    width: 71vmax;
     position: sticky;
-    top: 0;
-    min-height: 2em;
     display: flex;
  }
 
@@ -220,8 +221,7 @@ button:hover {
 .history_page,
 .events_page,
 .players_page{
-    background: rgba(365,365,365,0.4);;
-    font-family: 'Roboto', sans-serif;
+    background: rgba(365,365,365,0.4);
     width: 17.75vmax;
     height: 5vmin;
     font-size: 3vmin;
@@ -231,20 +231,28 @@ button:hover {
     transform: translateY(1.5vh);
 }
 
+
+.Events .players_page,
+.News .players_page,
+.Players .players_page {
+    pointer-events: none;
+    background: rgba(365,365,365,0.8);
+}
+
 .news_page {
-    margin-left: 14.5vmax;
     border-bottom-left-radius: 4vmin;
 }
 
-.events_page {
+.players_page {
     width: 17.25vmax;
     margin-left: 0.5vmax;
     border-bottom-right-radius: 4vmin;
 }
+
+
 .log_button,
 .reg_button {
     background: transparent;
-    font-family: 'Roboto', sans-serif;
     position: relative;
     width: 20vmax;
     height: 10vmin;
@@ -256,7 +264,7 @@ button:hover {
 }
 .success,
 .alert {
-    font-family: 'Roboto', sans-serif;
+
     margin-left: 5vw;
     margin-bottom: 2vh;
     font-size: 3vmin;
@@ -273,16 +281,92 @@ button:hover {
     color: green;
 }
 
-.reg_button {
-    transform: translate(-25vw, 30vh);
+.reg_b {
+    position: fixed;
+    transform: translateY(30vmin);
 }
 
-.add_player {
-    z-index: 10;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    width: 10%;
-    height: 10%;
+.players_table {
 
+    max-width: 71vmax;
+    width: 71vmax;
+    margin: auto;
+    margin-top: 3vh;
+    border: none;
+    border-style: ridge;
+    border-radius: 4vmin;
+    background: rgba(365,365,365,0.4);
+}
+
+.players_table td,
+.players_table th {
+    text-align: center;
+    font-size: 3vmin;
+}
+
+.players_table th {
+    cursor: pointer;
+}
+
+.add_button {
+    background: rgba(365,365,365,0.4);
+    border-style: ridge;
+    font-size: 3vmin;
+    width: 25vh;
+    border-radius: 5vmin;
+    text-align: center;
+}
+
+th.sorted[data-order="-1"]::after {
+	content: "▼"
+}
+
+th.sorted[data-order="1"]::after {
+	content: "▲"
+}
+
+
+.table_name {
+    font-size: 3vh;
+    color: rgba(365,365,365,0.8);
+}
+
+
+.add_mate input {
+    width: 250%
+}
+
+.add_mate::before,
+.add_mate .spin {
+    width: 250%;
+}
+
+.redact_button,
+.adding_button {
+    background: rgba(365,365,365,0.4);
+    width: 17.75vmax;
+    height: 5vmin;
+    font-size: 3vmin;
+    transition: 0.3s;
+    border-color: white;
+    border-style: ridge;
+    border-radius: 4vmin;
+}
+
+
+.b_red {
+    background: transparent;
+    width: 30;
+    border: none;
+    
+}
+
+.b_red:hover {
+    width: 35px;
+    background: transparent;
+}
+
+.image_404 {
+    margin-left: 22.5%;
+    height: 70vmin;
 }

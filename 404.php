@@ -7,4 +7,4 @@ require("layouts/header.php");
 
 ?>
 
-<h1>404</h1>
+<img class = "image_404" src="images/error_404.png">

@@ -35,7 +35,19 @@ function is_auth():bool {
     return isset($_SESSION['user_id']);
 }
 
+function access_level():int {
+    if (is_auth()) {
+        $stmt = pdo() -> prepare("SELECT * FROM `users` WHERE `id` = :id");
+        $stmt -> execute(['id' => $_SESSION['user_id']]);
+        $user = $stmt -> fetch(PDO::FETCH_ASSOC);
+
+        return $user['perm'];
+    } else {
+        return 0;
+    }
+}
+
 
 $email_admin = "ellectronchik@mail.ru";
-$address = 'http://62.113.114.94:44545/';
+$address = 'http://localhost:44545/';
 ?>

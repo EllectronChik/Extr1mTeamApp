@@ -16,7 +16,7 @@
     <meta http-equiv="expires" content="0">
     <meta charset = "UTF-8">
         <title> <?= $title ?> </title>
-        <link href="styles/style.css?6" rel="stylesheet">
+        <link href="styles/style.css?8" rel="stylesheet">
         <link href="styles/background.css" rel="stylesheet"> 
         <link rel="icon" href="logo.ico" type="image/x-icon">
         <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
@@ -41,7 +41,7 @@
                 </form>
                 <?php } else { ?>
                 <form>
-                    <button class = "sign_up_button"><?php echo($user['username']) ?></button>
+                    <button class = "sign_up_button"><?php echo($user['username'])?></button>
                 </form>
                 <form action = "/do_logout">
                     <button class = "sign_in_button">LOG OUT</button>
@@ -54,13 +54,13 @@
                     <li><form action = "/news"><button  class = "news_page">News</button></form></li>
                 </ul>
                 <ul>
-                    <li><form action = "/events"><button  class = "players_page">Events</button></form></li>
+                    <li><form action = "/events"><button  class = "events_page">Events</button></form></li>
                 </ul>
                 <ul>
                     <li><form action = "/history"><button  class = "history_page">Team History</button></form></li>
                 </ul>
                 <ul>
-                    <li><form action = "/players"><button  class = "events_page">Players</button></form></li>
+                    <li><form action = "/players"><button  class = "players_page">Players</button></form></li>
                 </ul>
                 </nav>
     </body>
